@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 
 export default function Skills() {
@@ -18,7 +20,11 @@ export default function Skills() {
     { name: "Pandas", icon: "/icons/icons8-pandas.svg" },
     { name: "Slack", icon: "/icons/icons8-slack.svg" },
   ];
-
+  
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1, 
+  });
 
   return (
     <div id="skills" className="flex flex-col items-center justify-center bg-gray-100 py-10">

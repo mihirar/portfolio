@@ -16,14 +16,16 @@ export default function About() {
             </p>
         </div>
         <div className="w-full sm:w-1/2 flex justify-center items-center">
-            <Image
-                src="/me.jpg" // replace with your image path
-                alt="Profile Picture"
-                width={200}
-                height={200}
-                
-            />
+            <div className="rounded-full overflow-hidden inline-block">
+                <Image
+                    src="/memoji.png" // replace with your image path
+                    alt="Profile Picture"
+                    width={200}
+                    height={200}
+                />
+            </div>
         </div>
+
       </div>
     )
 }
