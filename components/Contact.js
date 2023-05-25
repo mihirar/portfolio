@@ -18,7 +18,7 @@ export default function Contact() {
           </div>
           <footer className="w-full text-center border-t border-grey p-4 py-5 row-start-3 row-end-4">
               <a href="https://github.com/mihirar" target="_blank" rel="noopener noreferrer" className='hover:bg-gray-400 focus:shadow-outline'>
-                Designed and built with React.js & Tailwind
+                Made from scratch with React.js & Tailwind
               </a>
           </footer>
       </div>
