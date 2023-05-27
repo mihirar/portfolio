@@ -9,10 +9,7 @@ import Image from 'next/image';
 
 function SidebarNav() {
   const [isExpanded, setIsExpanded] = useState(false);
-
-  const handleToggle = () => {
-    setIsExpanded(!isExpanded);
-  };
+  const handleToggle = () => setIsExpanded(!isExpanded);
 
   const links = [
     { href: "about", label: "About" },
@@ -22,22 +19,14 @@ function SidebarNav() {
   ];
 
   return (
-    <nav className="fixed top-0 right-0 p-5 md:top-1/2 md:right-5 transform md:-translate-y-1/2 z-50">
-      <div className="md:hidden flex items-center px-3 py-2 border rounded text-white border-gray-100 hover:text-black hover:border-black transition duration-200 ease-in-out bg-gray-100">
-        <button onClick={handleToggle} className="p-2 w-8 h-8 flex items-center justify-center">
-          <svg className="fill-current h-5 w-5 text-black" viewBox="0 0 20 20">
-            <path fill="currentColor" d="M0,3h20v2H0V3z M0,9h20v2H0V9z M0,15h20v2H0V15z" />
-          </svg>
-        </button>
-      </div>
-
-      <div className={`md:flex ${isExpanded ? 'block' : 'hidden'}`}>
-        <div className="space-y-5 md:space-y-8">
+    <>
+      <nav className="fixed lg:top-1/2 lg:right-5 transform lg:-translate-y-1/2 z-50 lg:flex hidden">
+        <div className="space-y-5 lg:space-y-8">
           {links.map((link) => (
             <ScrollLink 
               key={link.href} 
               to={link.href} 
-              className="block bg-gray-100 text-black hover:bg-white hover:text-black py-2 px-4 rounded-full md:text-right md:font-bold" 
+              className="block bg-gray-100 text-black hover:bg-white hover:text-black py-2 px-4 rounded-full lg:text-right lg:font-bold" 
               smooth={true} 
               duration={1000}
             >
@@ -45,10 +34,35 @@ function SidebarNav() {
             </ScrollLink>
           ))}
         </div>
+      </nav>
+
+      <div className={`fixed top-0 left-0 w-full h-full p-5 bg-black text-white transition-transform duration-200 ease-in-out z-50 ${isExpanded ? 'block' : 'hidden'} lg:hidden`}>
+        <div className="space-y-5">
+          {links.map((link) => (
+            <ScrollLink 
+              key={link.href} 
+              to={link.href} 
+              className="block bg-gray-800 text-white hover:bg-gray-700 hover:text-white py-2 px-4 rounded-full text-left font-bold"
+              smooth={true} 
+              duration={1000}
+              onClick={handleToggle}
+            >
+              {link.label}
+            </ScrollLink>
+          ))}
+        </div>
       </div>
-    </nav>
+
+      <button onClick={handleToggle} className={`fixed top-0 right-0 m-5 p-2 w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full z-50 ${isExpanded ? 'hidden' : 'block'} lg:hidden`}>
+        <svg className="fill-current h-6 w-6" viewBox="0 0 20 20">
+          <path fill="currentColor" d="M0,3h20v2H0V3z M0,9h20v2H0V9z M0,15h20v2H0V15z" />
+        </svg>
+      </button>
+    </>
   );
 }
+
+
 
 
 export default function Landing() {

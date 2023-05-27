@@ -25,24 +25,24 @@ export default function Projects() {
   };
 
   return (
-    <div id="projects" className="py-20 bg-gray-100 text-center px-5 md:px-20 lg:px-40">
+    <div id="projects" className="py-20 bg-black text-white text-center px-10 sm:px-20">
       <h2 className="text-4xl mb-5">Projects</h2>
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {Object.keys(projects).map((key, i) => (
-          <li key={key} className="bg-white rounded-lg shadow-lg p-4 transform transition duration-500 hover:bg-blue-200 hover:-translate-y-2">
+          <li key={key} className="bg-gray-800 rounded-lg shadow-lg p-4 transform transition duration-500 hover:bg-gray-900 hover:-translate-y-2 text-white">
             <div className="flex justify-between items-center">
               <div>
                 <FontAwesomeIcon icon={faFolderOpen} size="2x"/>
               </div>
               <div>
-                <a href={projects[key]["link"]} target="_blank" rel="noopener noreferrer" className="ml-10">
+                <a href={projects[key]["link"]} target="_blank" rel="noopener noreferrer" className="ml-10 text-white">
                   <FontAwesomeIcon icon={faGithub} size="2x" />
                 </a>
               </div>
             </div>
-            <h3 className="text-xl mb-2 mt-2 font-bold text-black">{key}</h3>
+            <h3 className="text-xl mb-2 mt-2 font-bold text-white">{key}</h3>
             <p className="mb-2">{projects[key]["desc"]}</p>
-            <p className="text-black">{projects[key]["techStack"]}</p>
+            <p className="text-white">{projects[key]["techStack"]}</p>
           </li>
         ))}
       </ul>

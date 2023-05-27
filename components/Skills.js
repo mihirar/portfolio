@@ -20,33 +20,35 @@ export default function Skills() {
     { name: "Pandas", icon: "/icons/icons8-pandas.svg" },
     { name: "Slack", icon: "/icons/icons8-slack.svg" },
   ];
-  
+
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.1, 
+    threshold: 0.1,
   });
 
   return (
-    <div id="skills" className="flex flex-col items-center justify-center bg-gray-100 py-10">
-      <h2 className="text-4xl mb-10 text-center">Skills</h2>
-      <div className="grid grid-cols-5 sm:grid-cols-5 md:grid-cols-3 lg:grid-cols-5 gap-4">
+    <div id="skills" className="flex flex-col items-center justify-center bg-black text-white py-10 sm:px-20">
+      <h2 className="text-3xl sm:text-4xl mb-10 text-center">Skills</h2>
+      <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 gap-4">
         {skills.map(({ name, icon }) => (
           <div 
             key={name} 
-            className="group flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-90"
+            className="flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-90"
           >
-            <div className="group-hover:opacity-80 transition-all duration-300 ease-in-out transform hover:scale-90">
+            <div className="opacity-80 transition-all duration-300 ease-in-out transform hover:scale-90">
               <Image
                 src={icon}
                 alt={name}
-                width={75}
-                height={75}
+                width={50}
+                height={50}
               />
             </div>
-            <p className="opacity-0 group-hover:opacity-100 transform transition-all duration-300 ease-in-out scale-0 group-hover:scale-100">{name}</p>
+            <p className="mt-2 text-center">{name}</p>
           </div>
         ))}
       </div>
     </div>
   );
 }
+
+

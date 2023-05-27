@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Landing from '../components/Landing'
 import About from '../components/About'
 import Projects from '../components/Projects'
@@ -11,6 +12,12 @@ import { Analytics } from '@vercel/analytics/react';
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Mihir Araveeti - Software Engineering</title>
+        <meta name="description" content="Mihir Araveeti's portfolio, showcasing skills, experience, and projects. Specializing in building exceptional digital experiences." />
+        <meta name="keywords" content="Mihir Araveeti, Software Engineering, Portfolio, Projects, Skills, Experience" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="text-black">
         <Landing />
         <About />
