@@ -94,7 +94,7 @@ export default function Landing() {
             </motion.div>
 
           <motion.a 
-            href="/Mihir_Araveeti_Fall_2023.pdf" target="_blank"
+            href="/Mihir_Araveeti_Resume-Main.pdf" target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center h-10 mb-5 px-5 mt-1/2 transition-colors duration-150
             bg-white text-black rounded-full focus:shadow-outline hover:bg-gray-400"
