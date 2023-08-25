@@ -79,7 +79,7 @@ export default function Landing() {
           <motion.p className="text-xl mb-5" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2, duration: 1 }}>Hi, my name is</motion.p>
           <motion.h1 className="text-5xl mb-5" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4, duration: 1 }}>Mihir Araveeti.</motion.h1>
           <motion.p className="text-xl mb-5" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 1 }}>I specialize in building exceptional digital experiences.<br/>
-            Currently, I’m a Wealth Platform Developer Intern at SEI. </motion.p>
+            Currently, I’m an intern at AI Camp. </motion.p>
             <motion.div className="mb-10 flex space-x-4 justify-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8, duration: 1 }}>
               <a href="https://www.linkedin.com/in/mihir-ar/" target="_blank" rel="noopener noreferrer">
                 <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
