@@ -9,6 +9,10 @@ export default function Projects() {
       "link": "https://github.com/PlantifyPOOSD/Plantify-Mobile",
       "open": "https://project1.com"
     },
+    "ACEE (Artificial Cognitive Entity for Enterprises)": {
+      "desc": "AI chatbot that consolidates enterprise data into a searchable repository",
+      "techStack": "Next.js, Typescript, Google Cloud Vision API & Embeddings Models, SingleStoreDB Vector Database, Apache Airflow",
+    },
     "PDF AI": {
       "desc": "A Python-based application that uses AI/ML technologies like LangChain, OpenAI's GPT-3.5 Turbo, and Facebook's FAISS to interpret and accurately answer queries from PDF content.",
       "techStack": "Python, LangChain, OpenAI API, Facebook AI Similarity Search",

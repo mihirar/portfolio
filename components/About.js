@@ -6,13 +6,16 @@ export default function About() {
         <div className="max-w-prose w-full sm:w-1/2 text-center sm:text-left mb-10 sm:mb-0">
             <h2 className="text-3xl sm:text-4xl mb-5 text-white">About Me</h2>
             <p className="text-base sm:text-lg text-white leading-relaxed">
-                I&apos;m a computer science student at the University of Central Florida, with a great interest in software engineering, artificial intelligence, and quantitative finance. 
+            I'm a computer science student at the University of Central Florida, graduating in May 2024. My strong foundation in computer science, combined with my dedication to continuous learning and growth, has driven me to excel in my coursework and projects.
                 <br/>
                 <br/>
-                My strong foundation in computer science, combined with my dedication to continuous learning and growth, has driven me to excel in my coursework and projects.
+                My coursework includes Data Structures & Algorithms, Machine Learning, Artificial Intelligence, Object-Oriented Programming, Systems Software, Discrete Structures, Prompt Engineering, Security in Computing, and Processes of Object-Oriented Software.
                 <br/>
                 <br/>
-                Aside from academics, my leadership role as the President of Delta Epsilon Psi Fraternity, Inc. has honed my skills in leadership and financial management. 
+                As the President of Delta Epsilon Psi Fraternity, Inc., Lambda Chapter, I have honed my leadership skills in strategic planning, philanthropic initiatives, and community service. I'm passionate about fostering leadership development and making a positive impact in my community.
+                <br/>
+                <br/>
+                With my strong technical background, diverse skill set, and leadership experience, I'm well-equipped to tackle complex challenges and contribute to innovative projects at the intersection of software engineering and artificial intelligence.
             </p>
         </div>
         <div className="w-full sm:w-1/2 flex justify-center items-center">

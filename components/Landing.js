@@ -26,7 +26,7 @@ function SidebarNav() {
             <ScrollLink 
               key={link.href} 
               to={link.href} 
-              className="block bg-gray-100 text-black hover:bg-white hover:text-black py-2 px-4 rounded-full lg:text-right lg:font-bold" 
+              className="block bg-gray-800 text-white hover:bg-gray-700 hover:text-white py-2 px-4 rounded-full text-center font-bold transition duration-300" 
               smooth={true} 
               duration={1000}
             >
@@ -36,13 +36,13 @@ function SidebarNav() {
         </div>
       </nav>
 
-      <div className={`fixed top-0 left-0 w-full h-full p-5 bg-black text-white transition-transform duration-200 ease-in-out z-50 ${isExpanded ? 'block' : 'hidden'} lg:hidden`}>
+      <div className={`fixed top-0 left-0 w-full h-full p-5 bg-gray-900 text-white transition-transform duration-300 ease-in-out z-50 ${isExpanded ? 'block' : 'hidden'} lg:hidden`}>
         <div className="space-y-5">
           {links.map((link) => (
             <ScrollLink 
               key={link.href} 
               to={link.href} 
-              className="block bg-gray-800 text-white hover:bg-gray-700 hover:text-white py-2 px-4 rounded-full text-left font-bold"
+              className="block bg-gray-800 text-white hover:bg-gray-700 hover:text-white py-2 px-4 rounded-full text-center font-bold transition duration-300"
               smooth={true} 
               duration={1000}
               onClick={handleToggle}
@@ -53,14 +53,15 @@ function SidebarNav() {
         </div>
       </div>
 
-      <button onClick={handleToggle} className={`fixed top-0 right-0 m-5 p-2 w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full z-50 ${isExpanded ? 'hidden' : 'block'} lg:hidden`}>
-        <svg className="fill-current h-6 w-6" viewBox="0 0 20 20">
+      <button onClick={handleToggle} className={`fixed top-0 right-0 m-5 p-2 w-10 h-10 flex items-center justify-center bg-gray-800 text-white rounded-full z-50 ${isExpanded ? 'hidden' : 'block'} lg:hidden focus:outline-none`}>
+        <svg className={`fill-current h-6 w-6 transition-transform duration-300 ${isExpanded ? 'transform rotate-90' : ''}`} viewBox="0 0 20 20">
           <path fill="currentColor" d="M0,3h20v2H0V3z M0,9h20v2H0V9z M0,15h20v2H0V15z" />
         </svg>
       </button>
     </>
   );
 }
+
 
 
 //Testing
@@ -78,8 +79,8 @@ export default function Landing() {
         >
           <motion.p className="text-xl mb-5" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2, duration: 1 }}>Hi, my name is</motion.p>
           <motion.h1 className="text-5xl mb-5" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4, duration: 1 }}>Mihir Araveeti.</motion.h1>
-          <motion.p className="text-xl mb-5" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 1 }}>I specialize in building exceptional digital experiences.<br/>
-            Currently, I’m an intern at AI Camp. </motion.p>
+          <motion.p className="text-xl mb-5" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 1 }}>I specialize in building applications combining my skills in software engineering and artificial intelligence.<br/>
+            Currently, I’m a senior computer science student at the University of Central Florida. </motion.p>
             <motion.div className="mb-10 flex space-x-4 justify-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8, duration: 1 }}>
               <a href="https://www.linkedin.com/in/mihir-ar/" target="_blank" rel="noopener noreferrer">
                 <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
@@ -94,7 +95,7 @@ export default function Landing() {
             </motion.div>
 
           <motion.a 
-            href="/Mihir_Araveeti_Resume-Main.pdf" target="_blank"
+            href="/Mihir_Araveeti_Resume.pdf" target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center h-10 mb-5 px-5 mt-1/2 transition-colors duration-150
             bg-white text-black rounded-full focus:shadow-outline hover:bg-gray-400"
