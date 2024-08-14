@@ -94,18 +94,20 @@ export default function Landing() {
               </a>
             </motion.div>
 
-          <motion.a 
-            href="/Mihir_Araveeti_Resume_2024.pdf" target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center h-10 mb-5 px-5 mt-1/2 transition-colors duration-150
-            bg-white text-black rounded-full focus:shadow-outline hover:bg-gray-400"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1, duration: 1 }}
-          >
-            <FontAwesomeIcon icon={faDownload} />
-            <span className="ml-2">Download Resume</span>
-          </motion.a>
+{/* 
+<motion.a 
+  href="/resume.pdf" target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center h-10 mb-5 px-5 mt-1/2 transition-colors duration-150
+  bg-white text-black rounded-full focus:shadow-outline hover:bg-gray-400"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 1, duration: 1 }}
+>
+  <FontAwesomeIcon icon={faDownload} />
+  <span className="ml-2">Download Resume</span>
+</motion.a> 
+*/}
         </motion.div>
         <motion.div 
           className="absolute bottom-5 animate-bounce flex items-center justify-center w-12 h-12 rounded-full bg-white"
