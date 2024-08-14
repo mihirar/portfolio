@@ -29,7 +29,7 @@ export default function Skills() {
 
   const certifications = [
     { name: "AWS Certified Cloud Practitioner", icon: FaAws },
-    { name: "Generative AI with Large Language Models - DeepLearning.AI", icon: FaCertificate },
+    { name: "AWS Certified Solutions Architect", icon: FaAws },
   ];
 
   const { ref, inView } = useInView({

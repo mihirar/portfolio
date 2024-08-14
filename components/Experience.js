@@ -4,7 +4,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 export default function Experience() {
     return (
         <div id="experience" className="py-10 sm:py-20 bg-black text-white text-center">
-            <h2 className="text-3xl sm:text-4xl mb-5 text-white">Internship Experience</h2>
+            <h2 className="text-3xl sm:text-4xl mb-5 text-white">Experience</h2>
             <div className="px-5 sm:px-20 max-w-prose mx-auto text-left">
                 <ol className="relative border-l border-gray-500">   
                     <li className="mb-10 ml-1 sm:ml-4">

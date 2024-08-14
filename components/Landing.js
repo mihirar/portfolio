@@ -80,7 +80,7 @@ export default function Landing() {
           <motion.p className="text-xl mb-5" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2, duration: 1 }}>Hi, my name is</motion.p>
           <motion.h1 className="text-5xl mb-5" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4, duration: 1 }}>Mihir Araveeti.</motion.h1>
           <motion.p className="text-xl mb-5" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6, duration: 1 }}>I specialize in building applications combining my skills in software engineering and artificial intelligence.<br/>
-            Currently, I’m a senior computer science student at the University of Central Florida. </motion.p>
+             </motion.p>
             <motion.div className="mb-10 flex space-x-4 justify-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8, duration: 1 }}>
               <a href="https://www.linkedin.com/in/mihir-ar/" target="_blank" rel="noopener noreferrer">
                 <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
@@ -95,7 +95,7 @@ export default function Landing() {
             </motion.div>
 
           <motion.a 
-            href="/Mihir_Araveeti_Resume.pdf" target="_blank"
+            href="/Mihir_Araveeti_Resume_2024.pdf" target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center h-10 mb-5 px-5 mt-1/2 transition-colors duration-150
             bg-white text-black rounded-full focus:shadow-outline hover:bg-gray-400"
