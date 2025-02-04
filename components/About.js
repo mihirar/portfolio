@@ -23,7 +23,7 @@ export default function About() {
                             I&apos;m a Computer Science graduate from the University of Central Florida, currently working as an Analyst at Deloitte in the Enterprise Performance portfolio, where I drive digital transformation initiatives. My strong foundation in AI, machine learning, and software engineering is complemented by hands-on experience in developing innovative solutions and implementing cutting-edge technologies.
                         </p>
                         <p className="text-xl leading-relaxed">
-                            Skilled in Python, Java, and cloud platforms (AWS, GCP), I'm passionate about leveraging AI to solve complex problems. I hold certifications including AWS Solutions Architect, AWS Cloud Practitioner, and NVIDIA-Certified Associate in Generative AI LLMs, demonstrating my expertise in cloud computing and machine learning.
+                            Skilled in Python, Java, and cloud platforms (AWS, GCP), I&apos;m passionate about leveraging AI to solve complex problems. I hold certifications including AWS Solutions Architect, AWS Cloud Practitioner, and NVIDIA-Certified Associate in Generative AI LLMs, demonstrating my expertise in cloud computing and machine learning.
                         </p>
                         <p className="text-xl leading-relaxed">
                             As a Secret Level Security Clearance holder, I have a proven track record of improving efficiency and user engagement in professional settings. My experience includes working effectively with teams, clients, and stakeholders to deliver go-to-market technologies and drive digital innovation.
