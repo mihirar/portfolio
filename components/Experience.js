@@ -8,7 +8,7 @@ export default function Experience() {
         {
             date: "Sep 2024 - Present",
             title: "Technology Analyst | Deloitte",
-            description: "Executing a $230 billion S/4HANA digital transformation initiative while implementing cybersecurity measures for a 300,000+ user client base, facilitating interactive workshops that increased client engagement by 20%."
+            description: "Executing a S/4HANA digital transformation to migrate a client, impacting over 300,000 ERP users and aligning with a fiscal year budget of $230 billion, resulting in an 80% reduction in dataset and 40% faster data processing. Contributing to the consolidation of financial systems while implementing robust cybersecurity measures, enhancing data integrity, and ensuring compliance with industry regulations."
         },
         {
             date: "Sep 2023 - Nov 2023",
