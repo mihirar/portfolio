@@ -13,7 +13,7 @@ export default function Contact() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <p className="text-xl mb-4 text-gray-400">Let's connect,</p>
+            <p className="text-xl mb-4 text-gray-400">Let&apos;s connect,</p>
             <motion.h2 
               className="text-5xl font-bold mb-6 bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500 text-transparent bg-clip-text"
               initial={{ opacity: 0, y: -20 }}
