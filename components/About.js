@@ -1,28 +1,50 @@
+import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function About() {
     return (
-      <div id="about" className="py-10 sm:py-20 bg-black flex flex-col sm:flex-row justify-between items-center px-5 sm:px-20 min-h-screen">
-        <div className="max-w-prose w-full sm:w-1/2 text-center sm:text-left mb-10 sm:mb-0">
-            <h2 className="text-3xl sm:text-4xl mb-5 text-white">About Me</h2>
-            <p className="text-base sm:text-lg text-white leading-relaxed">
-                I&apos;m a recent computer science graduate from the University of Central Florida. My strong foundation in computer science, combined with my dedication to continuous learning and growth, has driven me to excel in my coursework, projects, and professional experiences.
-                <br/>
-                <br/>
-                My academic background includes Data Structures &amp; Algorithms, Machine Learning, Artificial Intelligence, Object-Oriented Programming, Systems Software, Discrete Structures, Prompt Engineering, Security in Computing, and Processes of Object-Oriented Software.
-                <br/>
-                <br/>
-                With my strong technical background, diverse skill set, and leadership experience, I&apos;m well-equipped to tackle complex challenges and contribute to innovative projects at the intersection of software engineering and artificial intelligence.
-            </p>
-        </div>
-        <div className="w-full sm:w-1/2 flex justify-center items-center">
-            <Image
-                src="/necessary-disorder tutorials.gif" // replace with your gif path
-                alt="Profile Gif"
-                width={400}
-                height={400}
-            />
-        </div>
-      </div>
+        <section id="about" className="py-20 bg-black text-white">
+            <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center">
+                <motion.div 
+                    className="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10"
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8 }}
+                >
+                    <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500 text-transparent bg-clip-text">About Me</h2>
+                    <motion.div 
+                        className="space-y-6 text-gray-300"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.2, duration: 0.8 }}
+                    >
+                        <p className="text-xl leading-relaxed">
+                            I'm a Computer Science graduate from the University of Central Florida, currently working as an Analyst at Deloitte in the Enterprise Performance portfolio, where I drive digital transformation initiatives. My strong foundation in AI, machine learning, and software engineering is complemented by hands-on experience in developing innovative solutions and implementing cutting-edge technologies.
+                        </p>
+                        <p className="text-xl leading-relaxed">
+                            Skilled in Python, Java, and cloud platforms (AWS, GCP), I'm passionate about leveraging AI to solve complex problems. I hold certifications including AWS Solutions Architect, AWS Cloud Practitioner, and NVIDIA-Certified Associate in Generative AI LLMs, demonstrating my expertise in cloud computing and machine learning.
+                        </p>
+                        <p className="text-xl leading-relaxed">
+                            As a Secret Level Security Clearance holder, I have a proven track record of improving efficiency and user engagement in professional settings. My experience includes working effectively with teams, clients, and stakeholders to deliver go-to-market technologies and drive digital innovation.
+                        </p>
+                    </motion.div>
+                </motion.div>
+                <motion.div 
+                    className="lg:w-1/2 flex justify-center"
+                    initial={{ opacity: 0, x: 50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8 }}
+                >
+                    <Image
+                        src="/necessary-disorder tutorials.gif"
+                        alt="Profile Gif"
+                        width={400}
+                        height={400}
+                        className="rounded-lg shadow-lg"
+                    />
+                </motion.div>
+            </div>
+        </section>
     )
 }

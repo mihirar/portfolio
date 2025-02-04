@@ -5,7 +5,9 @@ import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 import Experience from '../components/Experience'
 import Skills from '../components/Skills'
+import Certifications from '../components/Certifications'
 import NavBar from '../components/NavBar'
+import Sidebar from '../components/Sidebar'
 import '../app/globals.css'
 import { Analytics } from '@vercel/analytics/react';
 
@@ -19,10 +21,12 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <div className="text-black">
+        <Sidebar />
         <Landing />
         <About />
         <Experience />
         <Skills />
+        <Certifications />
         <Projects />
         <Contact />
       </div>
