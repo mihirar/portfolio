@@ -20,13 +20,13 @@ export default function About() {
                         transition={{ delay: 0.2, duration: 0.8 }}
                     >
                         <p className="text-xl leading-relaxed">
-                            I&apos;m a Computer Science graduate from the University of Central Florida, currently working as an Analyst at Deloitte in the Enterprise Performance portfolio, where I drive digital transformation initiatives. My strong foundation in AI, machine learning, and software engineering is complemented by hands-on experience in developing innovative solutions and implementing cutting-edge technologies.
+                            Hi, I&apos;m Mihir. As a computer science graduate from UCF, I currently drive digital transformation initiatives as an <b>Analyst at Deloitte</b> under the Enterprise Performance portfolio, leveraging my expertise in AI, machine learning, and software engineering to develop innovative technological solutions.
                         </p>
                         <p className="text-xl leading-relaxed">
-                            Skilled in Python, Java, and cloud platforms (AWS, GCP), I&apos;m passionate about leveraging AI to solve complex problems. I hold certifications including AWS Solutions Architect, AWS Cloud Practitioner, and NVIDIA-Certified Associate in Generative AI LLMs, demonstrating my expertise in cloud computing and machine learning.
+                            With deep expertise in Python and cloud platforms, I&apos;m passionate about solving complex problems through the use of <b>cloud and generative AI</b>. My professional credentials include cloud and generative AI certifications from <b>AWS and NVIDIA</b>, underscoring my comprehensive knowledge in cloud computing and machine learning.
                         </p>
                         <p className="text-xl leading-relaxed">
-                            As a Secret Level Security Clearance holder, I have a proven track record of improving efficiency and user engagement in professional settings. My experience includes working effectively with teams, clients, and stakeholders to deliver go-to-market technologies and drive digital innovation.
+                            With a <b>Secret Level Security Clearance</b>, I deliver transformative results by improving organizational efficiency and user engagement through strategic collaboration with teams, clients, and stakeholders, accelerating digital innovation and go-to-market technologies.
                         </p>
                     </motion.div>
                 </motion.div>
