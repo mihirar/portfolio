@@ -20,7 +20,7 @@ export default function About() {
                         transition={{ delay: 0.2, duration: 0.8 }}
                     >
                         <p className="text-xl leading-relaxed">
-                            Hi, I&apos;m Mihir. As a computer science graduate from UCF, I currently drive digital transformation initiatives as an <b>Analyst at Deloitte</b> under the Enterprise Performance portfolio, leveraging my expertise in AI, machine learning, and software engineering to develop innovative technological solutions.
+                            Hi, I&apos;m Mihir. As an Analyst at Deloitte, I drive digital transformation initiatives under the Enterprise Performance portfolio. I leverage my expertise in AI, machine learning, and software engineering to develop innovative technological solutions.
                         </p>
                         <p className="text-xl leading-relaxed">
                             With deep expertise in Python and cloud platforms, I&apos;m passionate about solving complex problems through the use of <b>cloud and generative AI</b>. My professional credentials include cloud and generative AI certifications from <b>AWS and NVIDIA</b>, underscoring my comprehensive knowledge in cloud computing and machine learning.
