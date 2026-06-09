@@ -20,10 +20,10 @@ export default function About() {
                         transition={{ delay: 0.2, duration: 0.8 }}
                     >
                         <p className="text-xl leading-relaxed">
-                            Hi, I&apos;m Mihir. As an Analyst at Deloitte, I drive digital transformation initiatives under the Enterprise Performance portfolio. I leverage my expertise in AI, machine learning, and software engineering to develop innovative technological solutions.
+                            I&apos;m a Data Scientist II currently at Booz Allen Hamilton, where I build production data and AI systems for top federal clients. My work spans machine learning pipelines, AI application development, and data infrastructure in Department of War environments.
                         </p>
                         <p className="text-xl leading-relaxed">
-                            With deep expertise in Python and cloud platforms, I&apos;m passionate about solving complex problems through the use of <b>cloud and generative AI</b>. My professional credentials include cloud and generative AI certifications from <b>AWS and NVIDIA</b>, underscoring my comprehensive knowledge in cloud computing and machine learning.
+                            I hold an AWS Solutions Architect certification and an NVIDIA Generative AI certification, and I&apos;ve built independent projects involving vector embeddings, multimodal retrieval, and full-stack AI applications. 
                         </p>
                         <p className="text-xl leading-relaxed">
                             With a <b>Secret Level Security Clearance</b>, I deliver transformative results by improving organizational efficiency and user engagement through strategic collaboration with teams, clients, and stakeholders, accelerating digital innovation and go-to-market technologies.

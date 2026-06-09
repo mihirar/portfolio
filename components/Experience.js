@@ -6,9 +6,14 @@ import { motion } from 'framer-motion';
 export default function Experience() {
     const experiences = [
         {
-            date: "Sep 2024 - Present",
+            date: "April 2026 - Present",
+            title: "Data Scientist II | Booz Allen Hamilton",
+            description: "Build data and AI solutions supporting top federal clients, spanning machine learning, data pipelines, and applied AI in mission-critical environments."
+        },
+        {
+            date: "Sep 2024 - April 2026",
             title: "Technology Analyst | Deloitte",
-            description: "Executing a S/4HANA digital transformation to migrate a client, impacting over 300,000 ERP users and aligning with a fiscal year budget of $230 billion, resulting in an 80% reduction in dataset and 40% faster data processing. Contributing to the consolidation of financial systems while implementing robust cybersecurity measures, enhancing data integrity, and ensuring compliance with industry regulations."
+            description: "Built production AI and data systems for Department of Defense clients using Palantir Foundry and AIP — including end-to-end data pipelines, an AI document intelligence platform processing thousands of documents with entity extraction and validated summarization, and operational applications with role-based access controls. Configured Linux RHEL environments and enforced federal cybersecurity compliance."
         },
         {
             date: "Sep 2023 - Nov 2023",
